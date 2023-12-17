@@ -1,4 +1,4 @@
-import './ThemeSelection.css'
+import './WelcomePageMain.scss'
 
 export default function ThemeSelection() {
   return (

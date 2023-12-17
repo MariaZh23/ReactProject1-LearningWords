@@ -1,4 +1,4 @@
-import './ProgressInfo.css'
+import './ProgressInfo.scss'
 
 export default function ProgressInfo() {
   return (

@@ -1,0 +1,72 @@
+[
+{ "id": "1",
+"english": "time", 
+"transcription": "[taɪm]", 
+"russian": "время",
+"tags": "General", 
+"tags_json": "[General]" 
+},
+{ "id": "2",
+"english": "person", 
+"transcription": "[ˈpəːs(ə)n]",
+"russian": "человек", 
+"tags": "General", 
+"tags_json": "[General]" 
+},
+{ "id": "3",
+"english": "year", 
+"transcription": "[jɪər]",
+"russian": "год",
+"tags": "Time", 
+"tags_json": "[Time]"
+},
+{ "id": "4",
+"english": "way", 
+"transcription": "[weɪ]", 
+"russian": "путь", 
+"tags": "General", 
+"tags_json": "[General]" 
+},
+{ "id": "5", 
+"english": "day",
+"transcription": "[deɪ]",
+"russian": "день",
+"tags": "Time",
+"tags_json": "[Time]" 
+},
+{ "id": "6",
+"english": "man",
+"transcription": "[mæn]",
+"russian": "мужчина", 
+"tags": "People", 
+"tags_json": "[People]" 
+},
+{ "id": "7",
+"english": "government", 
+"transcription": "[ˈɡʌv(ə)nmənt]",
+"russian": "правительство",
+"tags": "Politics",
+"tags_json": "[Politics]" 
+}, 
+{ "id": "8",
+"english": "company",
+"transcription": "[ˈkʌmp(ə)ni]",
+"russian": "компания",
+"tags": "Business",
+"tags_json": "[Business]" 
+},
+{ "id": "9",
+"english": "part", 
+"transcription": "[pɑːt]",
+"russian": "часть",
+"tags": "General",
+"tags_json": "[General]" 
+},
+{ "id": "10",
+"english": "child",
+"transcription": "[tʃaɪld]",
+"russian": "ребенок",
+"tags": "Family",
+"tags_json": "[Family]" 
+}
+]

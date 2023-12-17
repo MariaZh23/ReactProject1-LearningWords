@@ -1,0 +1,55 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    .table-body {
+        width: 100%;
+        margin: 5px;
+        border: 2px solid gray;
+        
+        .table-head-items{
+            background-color: antiquewhite;
+            border-bottom: 2px solid gray;
+            }
+        
+        .table-col-number{
+            background-color: antiquewhite;
+            border-right: 2px solid gray;
+        }
+        .table-col-english, .table-col-transcription, .table-col-russian, .table-col-tags, .table-col-comments{
+            border-right: 2px solid gray;
+        }
+    }
+}
+tbody td{
+    border-top: 2px solid gray;
+}
+
+.edit-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-image: url(/src/assets/icons8-редактировать.svg);
+    background-size: cover;
+}
+.cancel-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-image: url(/src/assets/icons8-отмена.svg);
+    background-size: cover;
+}
+.save-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-image: url(/src/assets/button_save.svg);
+    background-size: cover;
+}
+.delete-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-image: url(/src/assets/delete.svg);
+    background-size: cover;
+}

@@ -1,4 +1,4 @@
-import '../SecondPageFlashcard/FlashCard.css'
+import '../SecondPageFlashcard/FlashCard.scss'
 
 export default function Flashcard() {
   return (
