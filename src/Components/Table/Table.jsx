@@ -4,8 +4,17 @@ import { useState } from 'react';
 
 export default function Table() {
     const [editingRow, setEditingRow] = useState(null);
+    const [editedWord, setEditedWord] = useState({
+        english: "",
+        transcription: "",
+        russian: "",
+        tags: "",
+        comments: ""
+    });
     const editBtn = (id) => {
+        const wordToEdit = wordsData.find((word) => word.id === id);
         setEditingRow(id);
+        setEditedWord(wordToEdit);
     };
     const saveBtn = () => {
         setEditingRow(null);
@@ -13,7 +22,13 @@ export default function Table() {
     const cancelBtn = () => {
         setEditingRow(null);
     };
-
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setEditedWord((prevWord) => ({
+        ...prevWord,
+        [name]: value
+        }));
+    };
     return (
     <div className='table-container'>
     <table className='table-body'>
@@ -29,22 +44,76 @@ export default function Table() {
         </tr>
     </thead>
     <tbody>
-        {wordsData.map((word) => (
+        {wordsData.map((word, index) => (
             <tr key={word.id}>
-                <td className='table-col-number'>{word.id}</td>
-                <td className='table-col-english'>{word.english}</td>
-                <td className='table-col-transcription'>{word.transcription}</td>
-                <td className='table-col-russian'>{word.russian}</td>
-                <td className='table-col-tags'>{word.tags}</td>
-                <td className='table-col-comments'>{word.comments}</td>
+                <td className='table-col-number'>{index + 1}</td>
+                <td className='table-col-english'> {editingRow === word.id ? (
+                    <input
+                        type="text"
+                        name="english"
+                        value={editedWord.english}
+                        onChange={handleInputChange}
+                    />
+                ) : (
+                    word.english
+                    )}
+                </td>
+                <td className='table-col-transcription'>
+                    {editingRow === word.id ? (
+                    <input
+                        type="text"
+                        name="transcription"
+                        value={editedWord.transcription}
+                        onChange={handleInputChange}
+                    />
+                ) : (
+                    word.transcription
+                    )}
+                </td>
+                <td className='table-col-russian'>
+                    {editingRow === word.id ? (
+                    <input
+                        type="text"
+                        name="russian"
+                        value={editedWord.russian}
+                        onChange={handleInputChange}
+                    />
+                ) : (
+                    word.russian
+                    )}
+                </td>
+                <td className='table-col-tags'>{
+                    editingRow === word.id ? (
+                    <input
+                        type="text"
+                        name="tags"
+                        value={editedWord.tags}
+                        onChange={handleInputChange}
+                    />
+                ) : (
+                    word.tags
+                    )}
+                </td>
+                <td className='table-col-comments'>{
+                    editingRow === word.id ? (
+                    <input
+                        type="text"
+                        name="comments"
+                        value={editedWord.comments}
+                        onChange={handleInputChange}
+                        />
+                ) : (
+                    word.comments
+                    )}
+                </td>
                 <td>
                 {editingRow === word.id ? (
-                    <div>
+                    <div className='editing-buttons'>
                     <button className='save-btn' onClick={saveBtn}></button>
                     <button className='cancel-btn' onClick={cancelBtn}></button>
                     </div>
                 ) : (
-                    <div>
+                    <div className='editing-buttons'>
                         <button className='edit-btn' onClick={() => editBtn (word.id)}></button>
                         <button className='delete-btn'></button>
                     </div>

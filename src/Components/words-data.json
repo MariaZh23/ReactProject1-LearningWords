@@ -68,5 +68,47 @@
 "russian": "ребенок",
 "tags": "Family",
 "tags_json": "[Family]" 
+}, 
+{ "id": "36",
+"english": "money",
+"transcription": "[ˈmʌni]",
+"russian": "деньги",
+"tags": "Business",
+"tags_json": "[Business]" 
+},
+{ "id": "37",
+"english": "fact",
+"transcription": "[fækt]", 
+"russian": "факт",
+"tags": "General",
+"tags_json": "[General]" 
+},
+{ "id": "38",
+"english": "point",
+"transcription": "[pɔɪnt]",
+"russian": "точка",
+"tags": "General",
+"tags_json": "[General]" 
+},
+{ "id": "39",
+"english": "child", 
+"transcription": "[tʃaɪld]",
+"russian": "ребенок",
+"tags": "Family",
+"tags_json": "[Family]" 
+},
+{ "id": "40", 
+"english": "hand", 
+"transcription": "[hænd]",
+"russian": "рука",
+"tags": "Body",
+"tags_json": "[Body]" 
+},
+{ "id": "41",
+"english": "child",
+"transcription": "[tʃaɪld]",
+"russian": "ребенок",
+"tags": "Family", 
+"tags_json": "[Family]"
 }
 ]

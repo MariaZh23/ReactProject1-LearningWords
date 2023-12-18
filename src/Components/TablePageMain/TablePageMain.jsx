@@ -4,7 +4,7 @@ import Table from '../Table/Table'
 export default function TablePageMain() {
     return (
     <div>
-        <h1>Список слов</h1>
+        <h1>Таблица изучаемых слов</h1>
         <Table />
     </div>
     )

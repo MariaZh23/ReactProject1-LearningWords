@@ -1,3 +1,6 @@
+@import '/src/style/templates';
+@import '/src/style/vars';
+
 .table-container {
     display: flex;
     justify-content: center;
@@ -5,51 +8,41 @@
     .table-body {
         width: 100%;
         margin: 5px;
-        border: 2px solid gray;
-        
+        border: $border-color;
         .table-head-items{
             background-color: antiquewhite;
-            border-bottom: 2px solid gray;
-            }
-        
+            border-bottom: $border-color;
+        }
         .table-col-number{
             background-color: antiquewhite;
-            border-right: 2px solid gray;
+            border-right: $border-color;
         }
         .table-col-english, .table-col-transcription, .table-col-russian, .table-col-tags, .table-col-comments{
-            border-right: 2px solid gray;
+            border-right: $border-color;
         }
     }
 }
 tbody td{
-    border-top: 2px solid gray;
+    border-top: $border-color;
 }
-
 .edit-btn{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    background-image: url(/src/assets/icons8-редактировать.svg);
-    background-size: cover;
+    @include table-btn();
+    background-image: url(/src/assets/button_edit.svg);
 }
 .cancel-btn{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    background-image: url(/src/assets/icons8-отмена.svg);
-    background-size: cover;
+    @include table-btn();
+    background-image: url(/src/assets/button_cancel.svg);
 }
 .save-btn{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
+    @include table-btn();
     background-image: url(/src/assets/button_save.svg);
-    background-size: cover;
 }
 .delete-btn{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    background-image: url(/src/assets/delete.svg);
-    background-size: cover;
+    @include table-btn();
+    background-image: url(/src/assets/button_delete.svg);
+}
+.editing-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
