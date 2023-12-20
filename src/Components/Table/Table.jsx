@@ -52,11 +52,8 @@ export default function Table() {
                         type="text"
                         name="english"
                         value={editedWord.english}
-                        onChange={handleInputChange}
-                    />
-                ) : (
-                    word.english
-                    )}
+                        onChange={handleInputChange}/>
+                ) : (word.english)}
                 </td>
                 <td className='table-col-transcription'>
                     {editingRow === word.id ? (
@@ -64,11 +61,8 @@ export default function Table() {
                         type="text"
                         name="transcription"
                         value={editedWord.transcription}
-                        onChange={handleInputChange}
-                    />
-                ) : (
-                    word.transcription
-                    )}
+                        onChange={handleInputChange}/>
+                ) : (word.transcription)}
                 </td>
                 <td className='table-col-russian'>
                     {editingRow === word.id ? (
@@ -76,11 +70,8 @@ export default function Table() {
                         type="text"
                         name="russian"
                         value={editedWord.russian}
-                        onChange={handleInputChange}
-                    />
-                ) : (
-                    word.russian
-                    )}
+                        onChange={handleInputChange}/>
+                ) : (word.russian)}
                 </td>
                 <td className='table-col-tags'>{
                     editingRow === word.id ? (
@@ -88,11 +79,8 @@ export default function Table() {
                         type="text"
                         name="tags"
                         value={editedWord.tags}
-                        onChange={handleInputChange}
-                    />
-                ) : (
-                    word.tags
-                    )}
+                        onChange={handleInputChange}/>
+                ) : (word.tags)}
                 </td>
                 <td className='table-col-comments'>{
                     editingRow === word.id ? (
@@ -100,11 +88,8 @@ export default function Table() {
                         type="text"
                         name="comments"
                         value={editedWord.comments}
-                        onChange={handleInputChange}
-                        />
-                ) : (
-                    word.comments
-                    )}
+                        onChange={handleInputChange}/>
+                ) : (word.comments)}
                 </td>
                 <td>
                 {editingRow === word.id ? (

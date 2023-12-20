@@ -1,4 +1,4 @@
-import '../SecondPageFlashcard/Slider.scss'
+import '../Slider/Slider.scss'
 
 export default function Slider() {
   return (

@@ -1,3 +1,6 @@
+@import '/src/style/templates';
+@import '/src/style/vars';
+
 .header-container{
     padding-top: 0.625em;
     min-width: 100%;
@@ -22,6 +25,7 @@
             list-style: none;
             font-size: 2em;
             .header-nav-list-item{
+                padding-bottom: 5px;
                 border: 2px solid rgb(76, 106, 93);
                 border-radius: 0.5em;
                 background: linear-gradient(to right, #ff5f6d, #ffc371);
@@ -31,12 +35,12 @@
                     background: linear-gradient(to left, #9f5fff, #fa71ff);
                 }
                 a {
-                    padding: 15px;
+                    padding: 0.925em;
                     font-weight: 400;
                     color: #ffffff;
                     text-decoration: inherit;
                     &:hover, &:active {
-                        color: darkblue;
+                        color: rgb(23, 23, 188);
                     }
                 }
             }
