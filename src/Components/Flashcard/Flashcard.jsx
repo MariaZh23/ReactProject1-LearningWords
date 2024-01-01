@@ -1,14 +1,9 @@
 import "../Flashcard/FlashCard.scss";
-import wordsData from "../words-data.json";
-import { useState } from "react";
-
-export default function Flashcard() {
+import { useState, useEffect } from "react";
+export default function Flashcard( { currentCard}) {
   const [showTranslation, setShowTranslation] = useState(false);
-  const randomIndex = Math.floor(Math.random() * wordsData.length);
-  const [currentCard, setCurrentCard] = useState(wordsData[randomIndex]);
   const showTranslationBtn = () => {
     setShowTranslation(true);
-    setCurrentCard;
   };
 
   return (

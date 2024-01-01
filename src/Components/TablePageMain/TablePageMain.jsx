@@ -1,11 +1,11 @@
 import "./TablePageMain.scss";
-import Flashcard from "../Flashcard/Flashcard";
+import Slider from "../Slider/Slider";
 import Table from "../Table/Table";
 
 export default function TablePageMain() {
   return (
     <div>
-      <Flashcard />
+      <Slider />
       <h1>Таблица изучаемых слов</h1>
       <Table />
     </div>
